@@ -1,0 +1,41 @@
+<div class="load-data">
+    <div class="block-content">
+        <div class="project-media row">
+            <div class="col-md-6">
+                <img src="images/portfolio/portfolio_campusNav.png" alt="Andriod App Source Code Screen Capture" />
+            </div>
+        </div>
+        <div class="project-head">
+            <h1 class="block-title">Campus Navigation</h1>
+            <div class="tags"><span>Category : </span> Andriod </div>
+            <div class="tags"><span>Client : </span> Dalhousie</div>
+            <div class="tags"><span>Completion : </span> July 2018</div>
+            <div class="tags"><span>Role : </span> 1 of 8 Group members</div>
+        </div>
+        <p class="project-description">The purpoes of this 4 month long project was to get a solid understanding of the Agile Workflow Methodolgy, as well as practice with CircleCI, Github, Andriod Stuid, Google APIs, and Java.</p>
+        <div class="project-nav text-center">
+            <span class="float-left">
+                <a class="open-project" href="project-11.html">&leftarrow; Previous Project</a>
+            </span>
+            <span class="">
+                <a id="close-project" href="#"><i class="ion-grid"></i></a>
+            </span>
+            <span class="float-right">
+                <a class="open-project" href="project-13.html">Next Project &rightarrow; </a>
+            </span>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-12 btn-email">
+            <a class="btn lowercase">keith@keithmacinnis.com</a>
+        </div>
+    </div>
+
+    <script>
+        $('#close-project').on('click', function() {
+            $('.content-blocks.pop').removeClass('showx');
+            $('.inline-menu-container').addClass('showx');
+            $('.content-blocks.pop section').empty();
+        });
+    </script>
+</div>

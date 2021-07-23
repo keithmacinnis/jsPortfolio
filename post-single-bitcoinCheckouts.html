@@ -1,0 +1,79 @@
+<div id="blog-header" style="background: url(images/blog/bitcoin.jpg); background-size: cover;">
+    <div class="overlay"></div>
+    <div class="single-post-title">
+        <h1>Purchaces with Bitcoin & Shakepay</h1>
+        <p class="post-info">
+            <span class="post-author">Posted by Keith MacInnis</span>
+            <span class="slash"></span>
+            <span class="post-date">July 23, 2021</span>
+            <span class="slash"></span>
+            <span class="post-catetory">Crypto</span>
+        </p>
+    </div>
+</div>
+<div class="block-content">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="single-post">
+                <div class="post">
+                    <div class="post-body">
+                        <p>Purchasing goods online with bitcoin can be uneasy your first time! I have here a short gudie.</p>
+                        <p>The store I used had a btc checkout, when you clicked it you had one hour to pay and were presented with a qr code.</p>
+                        <blockquote>
+                            The QR code ensures you do not mistype the address. 
+                        </blockquote>
+                        <p>But how do you pay? If you have money in your digital wallet its easy. But if its your first time, there are two extra steps. 1) Download a wallet. 2) Load your wallet with cash. If you're Canadian, checkout
+                            <a href="https://shakepay.me/r/TB8V71F">ShakePay here.</a> To fund it, you send an interac e-mail which processes in a minute. You can then convert from Cdn -> Bitcon/Eth and then you can pay any retalier taking crypto. 
+                        </p>
+                    </div>
+                    <div class="author-box row">
+                        <div class="col-sm-2">
+                            <img src="images/blog/authorkm.jpg" class="rounded-circle" alt="Keith MacInnis Profile Picture" />
+                        </div>
+                        <div class="col-sm-10">
+                            <h3>Keith MacInnis<span> | Author</span></h3>
+                            <p>A software engineer located in Vancouver.</p>
+                        </div>
+                    </div>
+                   
+                 <div id="respond">
+                    <h3>Leave a comment</h3>
+                    <div class="comment-respond">
+                        <form class="comment-form">
+                            <div class="form-double">
+                                <div class="form-group">
+                                    <input name="author" type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="form-group last">
+                                    <input name="email" type="text" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Comment"></textarea>
+                            </div>
+                            <div class="form-submit">
+                                <button type="button" class="btn btn-dark">Post Comment</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+$('.open-post').on('click', function() {
+    var postUrl = $(this).attr("href");
+    $('.inline-menu-container').removeClass('showx');
+    $('.content-blocks.pop').addClass('showx');
+    $('.content-blocks.pop section').load(postUrl)
+    return false;
+});
+$('#close-post').on('click', function() {
+    $('.content-blocks.pop').removeClass('showx');
+    $('.inline-menu-container').addClass('showx');
+    $('.content-blocks.pop section').empty();
+});
+</script>
